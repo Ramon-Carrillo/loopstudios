@@ -1,0 +1,62 @@
+.about {
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 10rem;
+    left: 10.3125rem;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-interactive.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 45.6875rem;
+    height: 31.25rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45.6875rem;
+      height: 31.25rem;
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__box--wrapper {
+    position: absolute;
+    top: 21.4375rem;
+    right: 10.3125rem;
+    height: 19.8125rem;
+    width: 33.8125rem;
+    background-color: $White;
+  }
+
+  &__textbox {
+    position: absolute;
+    height: 13.8125rem;
+    width: 27.8125rem;
+    top: 6rem;
+    left: 6rem;
+
+    h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 3rem;
+      text-transform: uppercase;
+      color: $Black;
+      margin-bottom: 1.5625rem;
+    }
+
+    p {
+      font-family: 'Alata', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+      color: $Black;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
+}
