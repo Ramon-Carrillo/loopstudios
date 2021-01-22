@@ -2,6 +2,85 @@
   background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-hero.jpg)
     no-repeat center center;
   background-size: cover;
-  height: 650px;
-  width: 1440px;
+  height: 40.625rem;
+  width: 90rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  & * {
+    z-index: 10;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69.375rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family: ' Alata', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    color: $White;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 1.5rem;
+      left: 30%;
+      bottom: -0.625rem;
+    }
+
+    &:hover {
+      &::before {
+        background: $White;
+      }
+    }
+  }
+
+  &__box--border {
+    position: absolute;
+    width: 40.625rem;
+    height: 17.375rem;
+    left: 10.3125rem;
+    top: 14.125rem;
+    border: 2px solid $White;
+    padding: 2.5rem;
+  }
+
+  &__box--title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.5rem;
+    line-height: 4.375rem;
+    color: $White;
+    text-transform: uppercase;
+  }
 }
