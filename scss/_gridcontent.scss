@@ -1,0 +1,353 @@
+.grid {
+  position: relative;
+
+  &__container {
+    position: absolute;
+    width: 1114px;
+    height: 1058px;
+    left: 164px;
+    top: 844px;
+  }
+
+  &__textbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    h4 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 48px;
+      text-transform: uppercase;
+      color: $Black;
+    }
+
+    a {
+      font-family: 'Alata', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: $Black;
+      padding: 13px 38px;
+      position: relative;
+      width: 157px;
+      height: 40px;
+      border: 1px solid $Black;
+    }
+
+    a:hover {
+      color: $White;
+      background-color: $Black;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(2 2fr);
+    grid-gap: 30px;
+  }
+
+  &__img--1 {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-deep-earth.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--2 {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-night-arcade.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--3 {
+    position: relative;
+    grid-column: 3 / 4;
+    grid-row: 1;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-soccer-team.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--4 {
+    position: relative;
+    grid-column: 4 / 5;
+    grid-row: 1;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-grid.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--5 {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-from-above.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--6 {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-pocket-borealis.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--7 {
+    position: relative;
+    grid-column: 3 / 4;
+    grid-row: 2;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-curiosity.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img--8 {
+    position: relative;
+    grid-column: 4 / 5;
+    grid-row: 2;
+    background: url(https://ramon-carrillo.github.io/loopstudios/images/desktop/image-fisheye.jpg)
+      no-repeat center center;
+    background-size: cover;
+    width: 256px;
+    height: 450px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      height: 450px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.75071);
+      }
+      p {
+        color: $Black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $White;
+
+    p {
+      position: absolute;
+      left: 40px;
+      top: 354px;
+    }
+  }
+}
