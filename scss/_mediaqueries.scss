@@ -1,0 +1,17 @@
+//* 1024px to 64em
+@media (max-width: 64em) {
+  html {
+    font-size: 75%;
+  }
+  .about__box--wrapper {
+    right: 5.3125rem;
+    top: 21.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .about__box--wrapper {
+    right: -16.6875rem;
+    top: 21.55rem;
+  }
+}
