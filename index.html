@@ -12,6 +12,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/css/main.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script defer src="main.js"></script>
 
   <title> Loopstudios | Interactive VR</title>
 
@@ -25,9 +27,24 @@
         <img class='hero__hidden' src="images/logo.svg" alt="logo" />
         <img class='hero__desktop' src="images/logo.svg" alt="logo" />
       </figure>
-      <span class="hero__mobile--top"></span>
-      <span class="hero__mobile--middle"></span>
-      <span class="hero__mobile--bottom"></span>
+
+      <div class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <nav id='toggle' class='hero__mobile--nav toggle'>
+        <img src="images/logo.svg" alt="logo" />
+        <div class="mobile__link--box">
+          <a href="">About</a>
+          <a href="">Careers</a>
+          <a href="">Events</a>
+          <a href="">Products</a>
+          <a href="">Support</a>
+        </div>
+      </nav>
+
       <nav class='hero__nav'>
         <a class='hero__link' href="/">About</a>
         <a class='hero__link' href="/">Careers</a>

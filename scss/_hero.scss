@@ -38,36 +38,6 @@
     left: 24px;
   }
 
-  &__mobile--top {
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    left: 327px;
-    top: 44px;
-    background: #ffffff;
-    opacity: 0;
-  }
-
-  &__mobile--middle {
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    left: 327px;
-    top: 51px;
-    background: #ffffff;
-    opacity: 0;
-  }
-
-  &__mobile--bottom {
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    left: 327px;
-    top: 58px;
-    background: #ffffff;
-    opacity: 0;
-  }
-
   &__nav {
     display: flex;
     justify-content: space-between;
