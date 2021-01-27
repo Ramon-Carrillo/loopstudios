@@ -14,42 +14,11 @@
     right: -16.6875rem;
     top: 21.55rem;
   }
+}
 
-  .hero__mobile--nav {
-    position: absolute;
-    width: 375px;
-    height: 667px;
-    left: 0px;
-    top: 0px;
-    background-color: $Black;
-    z-index: 20;
+@media (min-width: 48em) {
+  .mobile--nav {
     visibility: hidden;
-
-    img {
-      position: absolute;
-      width: 144px;
-      height: 24px;
-      left: 24px;
-      top: 40px;
-    }
-
-    .mobile__link--box {
-      position: absolute;
-      width: 129px;
-      height: 221px;
-      left: 24px;
-      top: 223px;
-
-      a {
-        font-family: 'Josefin Sans', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 55px;
-        text-transform: uppercase;
-        color: $White;
-      }
-    }
   }
 }
 
@@ -124,7 +93,7 @@
       transform: translateY(-6px) rotate(-45deg);
     }
 
-    .hero__mobile--nav {
+    .mobile--nav {
       position: absolute;
       width: 375px;
       height: 667px;
@@ -132,7 +101,7 @@
       top: 0px;
       background-color: $Black;
       z-index: 20;
-      visibility: hidden;
+      visibility: visible;
 
       img {
         position: absolute;
