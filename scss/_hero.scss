@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
   }
 
   & * {
@@ -27,6 +27,45 @@
     width: 69.375rem;
     margin: 0 auto;
     padding-top: 4rem;
+  }
+
+  &__hidden {
+    opacity: 0;
+    width: 144px;
+    height: 24px;
+    position: absolute;
+    top: 40px;
+    left: 24px;
+  }
+
+  &__mobile--top {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 327px;
+    top: 44px;
+    background: #ffffff;
+    opacity: 0;
+  }
+
+  &__mobile--middle {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 327px;
+    top: 51px;
+    background: #ffffff;
+    opacity: 0;
+  }
+
+  &__mobile--bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 327px;
+    top: 58px;
+    background: #ffffff;
+    opacity: 0;
   }
 
   &__nav {

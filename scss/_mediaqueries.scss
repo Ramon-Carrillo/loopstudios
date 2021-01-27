@@ -8,10 +8,478 @@
     top: 21.5rem;
   }
 }
-
+//* 768px to 48em
 @media (max-width: 48em) {
   .about__box--wrapper {
     right: -16.6875rem;
     top: 21.55rem;
+  }
+}
+
+@media (max-width: 23.4375em) {
+  .hero {
+    background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-hero.jpg')
+      no-repeat center center;
+    background-size: cover;
+    height: 650px;
+    width: 375px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    & * {
+      z-index: 10;
+    }
+
+    &__desktop {
+      opacity: 0;
+    }
+
+    &__hidden {
+      opacity: 1;
+    }
+
+    & {
+      &__mobile--top,
+      &__mobile--middle,
+      &__mobile--bottom {
+        opacity: 1;
+      }
+    }
+
+    &__box--border {
+      position: absolute;
+      width: 327px;
+      height: 196px;
+      left: 24px;
+      top: 227px;
+    }
+
+    &__box--title {
+      position: absolute;
+      width: 279px;
+      height: 146px;
+      left: 24px;
+      top: 26px;
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  .about {
+    position: relative;
+    width: 398px;
+    height: 527px;
+
+    &__img {
+      position: absolute;
+      width: 327px;
+      height: 224px;
+      left: 24px;
+      top: 133px;
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-interactive.jpg')
+        no-repeat center center;
+      background-size: cover;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 224px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &__box--wrapper {
+      width: 279px;
+      height: 255px;
+      left: 0;
+      top: 372px;
+    }
+
+    &__textbox {
+      position: absolute;
+      width: 279px;
+      height: 255px;
+      left: 48px;
+      top: 48px;
+
+      h2 {
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        color: $Black;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .grid {
+    &__container {
+      position: absolute;
+      width: 327px;
+      height: 1208px;
+      top: 276px;
+      left: 24px;
+    }
+
+    &__textbox {
+      h4 {
+        display: inline-block;
+        width: 379px;
+        height: 32px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img--1 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-deep-earth.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--2 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-night-arcade.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--3 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-soccer-team.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--4 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-grid.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--5 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-from-above.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--6 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-pocket-borealis.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--7 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-curiosity.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--8 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-fisheye.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+
+    &__img--1 {
+      background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-deep-earth.jpg')
+        no-repeat center center;
+      background-size: cover;
+      width: 327px;
+      height: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 327px;
+        &__img--1 {
+          background: url('https://ramon-carrillo.github.io/loopstudios/images/mobile/image-deep-earth.jpg')
+            no-repeat center center;
+          background-size: cover;
+          width: 327px;
+          height: 120px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 327px;
+            height: 120px;
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          }
+        }
+        height: 120px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0%,
+          rgba(0, 0, 0, 0.601863) 100%
+        );
+      }
+    }
+    &__title {
+      position: relative;
+
+      p {
+        position: absolute;
+        height: 48px;
+        left: 6.12%;
+        right: 69.42%;
+        top: 52px;
+        font-size: 24px;
+        line-height: 24px;
+        width: 123px;
+      }
+    }
+
+    &__hidden--btn {
+      position: relative;
+      width: 157px;
+      height: 40px;
+      left: 95px;
+      top: 46px;
+      border: 1px solid #000000;
+
+      a {
+        position: absolute;
+        width: 157px;
+        height: 40px;
+        left: 38px;
+        top: 13px;
+        font-family: 'Alata', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $Black;
+
+        &:hover {
+          color: $White;
+        }
+      }
+
+      &:hover {
+        background-color: $Black;
+      }
+    }
+  }
+
+  .footer {
+    position: relative;
+    width: 375px;
+    height: 470px;
+    padding: 0;
+    top: 139.6875rem;
+
+    &__top {
+      position: absolute;
+      width: 272px;
+      top: 56px;
+      left: 52px;
+
+      &--logo {
+        img {
+          position: absolute;
+          left: 64px;
+          height: 24px;
+          width: 144px;
+        }
+      }
+      &--social {
+        position: absolute;
+        left: 70px;
+        top: 269px;
+      }
+    }
+
+    &__bottom {
+      position: relative;
+    }
+    &__bottom--nav {
+      position: absolute;
+      top: 100px;
+      width: 59px;
+      left: 162px;
+
+      .hero__link {
+        margin: 0;
+      }
+
+      a {
+        font-size: 15px;
+        line-height: 41px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__bottom--copy {
+      position: absolute;
+      left: 51px;
+      top: 358px;
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
