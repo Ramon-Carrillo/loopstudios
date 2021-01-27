@@ -6,12 +6,12 @@ $(document).ready(function () {
 
 function openNav() {
   hamburger.classList.add('is-active');
-  document.getElementById('toggle').style.opacity = '0';
+  document.getElementById('toggle').style.visibility = 'hidden';
 }
 
 function closeNav() {
   hamburger.classList.remove('is-active');
-  document.getElementById('toggle').style.opacity = '1';
+  document.getElementById('toggle').style.visibility = 'visible';
 }
 let hamburger = document.querySelector('.hamburger');
 
